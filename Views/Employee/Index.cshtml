@@ -1,0 +1,36 @@
+@model IEnumerable<EmployeeApp.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create", "Employee")">Add New Employee</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Position</td>
+                <td>@employee.Salary</td>
+                <td>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", "Employee", new { id = employee.Id })">Edit</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", "Employee", new { id = employee.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
