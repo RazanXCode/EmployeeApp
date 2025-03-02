@@ -220,3 +220,4 @@ C:\Users\razan\Desktop\EmployeeApp\obj\Debug\net9.0\refint\EmployeeApp.dll
 C:\Users\razan\Desktop\EmployeeApp\obj\Debug\net9.0\EmployeeApp.pdb
 C:\Users\razan\Desktop\EmployeeApp\obj\Debug\net9.0\EmployeeApp.genruntimeconfig.cache
 C:\Users\razan\Desktop\EmployeeApp\obj\Debug\net9.0\ref\EmployeeApp.dll
+C:\Users\razan\Desktop\EmployeeApp\obj\Debug\net9.0\EmployeeApp.sourcelink.json
